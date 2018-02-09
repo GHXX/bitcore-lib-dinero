@@ -1,17 +1,17 @@
 {
-  "name": "bitcore-lib-dash",
-  "main": "./bitcore-lib-dash.min.js",
+  "name": "bitcore-lib-dinero",
+  "main": "./bitcore-lib-dinero.min.js",
   "version": "0.15.2",
-  "homepage": "https://github.com/dashevo/bitcore-lib-dash",
+  "homepage": "https://github.com/dinerocoin/bitcore-lib-dinero",
   "authors": [
-    "Dash", "BitPay, Inc."
+    "Dinero", "BitPay, Inc."
   ],
-  "description": "A pure, powerful core for your dash project.",
+  "description": "A pure, powerful core for your dinero project.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "dash",
+    "dinero",
     "bitcoin",
     "bitcore",
     "btc",
