@@ -3493,7 +3493,7 @@ GovObject.prototype.fromString = function(string) {
 };
 
 /**
- * Retrieve a hexa string that can be used with dashd's CLI interface
+ * Retrieve a hexa string that can be used with dinerod's CLI interface
  *
  * @param {Object} opts allows to skip certain tests. {@see Transaction#serialize}
  * @return {string}
@@ -3621,7 +3621,7 @@ Proposal.prototype.dataHex = function() {
         url: this.url
     };
 
-    // screwy data shims 'til we can fix this on dashd
+    // screwy data shims 'til we can fix this on dinerod
     var inner = ['proposal', _govObj];
     var outer = [inner];
 
@@ -5048,13 +5048,17 @@ addNetwork({
   scripthash: 0x0d,
   xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
   xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
-  networkMagic: 0xbf0c6bbd,
+  networkMagic: 0x48b3f221,
   port: 26285,
   dnsSeeds: [
-    'dnsseed.darkcoin.io',
-    'dnsseed.dashdot.io',
-    'dnsseed.masternode.io',
-    'dnsseed.dinerocoin.io'
+    'seed1.dinerocoin.org',
+	'seed2.dinerocoin.org',
+	'seed3.dinerocoin.org',
+	'seed4.dinerocoin.org',
+	'seed5.dinerocoin.org',
+	'seed6.dinerocoin.org',
+	'seed7.dinerocoin.org',
+	'seed8.dinerocoin.org'
   ]
 });
 
@@ -5084,11 +5088,10 @@ var testnet = get('testnet');
 
 var TESTNET = {
   PORT: 26297,
-  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0xcee2caff),
+  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0xc9f2cbf0),
   DNS_SEEDS: [
-    'testnet-seed.darkcoin.io',
-    'testnet-seed.dashdot.io',
-    'test.dnsseed.masternode.io'
+    'testnet1.dinerocoin.org',
+    'testnet2.dinerocoin.org'
   ]
 };
 
