@@ -1,6 +1,6 @@
 {
   "name": "bitcore-lib-dinero",
-  "version": "0.15.2",
+  "version": "0.13.90",
   "description": "A pure and powerful JavaScript Dinero library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
